@@ -1,6 +1,6 @@
 cask "mascot" do
-  version "2.3.2"
-  sha256 "0607ae11ec8a70f7e794bfa26b9b0b8f16d45df2748fbdd769454123f3f0c30e"
+  version "2.3.3"
+  sha256 "424be810a09adfcbfb445b111df234ddac1a999fb47e481ad3161af4b0daf447"
 
   url "https://github.com/maulmota/mascot-screensaver/releases/download/v#{version}/Mascot.app.zip"
   name "Mascot"
