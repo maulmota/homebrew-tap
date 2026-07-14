@@ -4,7 +4,7 @@ cask "mascot" do
 
   url "https://github.com/maulmota/mascot-screensaver/releases/download/v#{version}/Mascot.app.zip"
   name "Mascot"
-  desc "Desktop pet that keeps your Mac awake (Clawd and friends)"
+  desc "Desktop pet that keeps the display awake (Clawd and friends)"
   homepage "https://github.com/maulmota/mascot-screensaver"
 
   livecheck do
@@ -12,7 +12,7 @@ cask "mascot" do
     strategy :github_latest
   end
 
-  depends_on macos: ">= :monterey"
+  depends_on macos: :monterey
 
   app "Mascot.app"
 
