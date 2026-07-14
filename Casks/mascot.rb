@@ -28,9 +28,9 @@ cask "mascot" do
 
   caveats <<~EOS
     Mascot is ad-hoc signed (not notarized). If macOS blocks the first
-    launch, either right-click Mascot.app and choose Open, or install
-    with the quarantine flag skipped:
+    launch, right-click /Applications/Mascot.app and choose Open, or
+    clear the quarantine flag:
 
-      brew install --cask --no-quarantine maulmota/tap/mascot
+      xattr -dr com.apple.quarantine /Applications/Mascot.app
   EOS
 end

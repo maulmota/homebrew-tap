@@ -8,11 +8,11 @@ Homebrew tap for [maulmota](https://github.com/maulmota)'s tools.
 brew install --cask maulmota/tap/mascot
 ```
 
-The app is ad-hoc signed (not notarized), so either right-click → Open on
-first launch, or skip the quarantine flag at install time:
+The app is ad-hoc signed (not notarized), so on first launch either
+right-click → Open, or clear the quarantine flag:
 
 ```bash
-brew install --cask --no-quarantine maulmota/tap/mascot
+xattr -dr com.apple.quarantine /Applications/Mascot.app
 ```
 
 ## Casks
